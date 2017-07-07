@@ -3,23 +3,10 @@ package com.henry;
 public class Main {
 
     public static void main(String[] args) {
-
-        // int has a width of 32
-        int myMinValue = -2147483648;
-        int myMaxValue = 2147483647;
-        int myTotal = (myMinValue/2);
-        System.out.println("myTotal = " + myTotal);
-
-        // byte has a width of 8
-        byte myByteValue = -128;
-        byte myNewByteValue = (byte) (myByteValue/2);
-        System.out.println("myNewByteValue = " + myNewByteValue);
-
-        // short has a width of 16
-        short myShortValue = 32767;
-        short myNewShortValue = (short) (myShortValue/2);
-
-        // long has a width of 64
-        long myLongValue = 9223372036854775807L;
+        byte byteVar = 100;
+        short shortVar = 5000;
+        int intVar = 12425;
+        long longVar = 50000+10*(byteVar+shortVar+intVar);
+        System.out.println(longVar);
     }
 }
